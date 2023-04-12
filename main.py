@@ -1,3 +1,5 @@
+from kafedralar import get_kafedralar, write_to_file
 
 if __name__ == "__main__":
-    pass
+    k = get_kafedralar()
+    write_to_file(k)
