@@ -13,7 +13,9 @@ def get_kafedralar():
 
     kafedralar = []
     for x in links:
-        kafedralar.append(x.text)
+        kafedra = x.text.strip()
+        if len(kafedra) > 0:
+            kafedralar.append(kafedra)
 
     return kafedralar
 
